@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>sliders</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./styles/lightbox.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./js/masonry.pkgd.js"></script>
+    <script src="./js/zoom.js"></script>
+    <script src="./js/elevatezoom.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="catalog__card">
+                    <div class="img-holder">
+                        <a href="./img/1.png" data-lightbox="image-1">
+                            <img id="zoom_01" src="./img/1.png" data-zoom-image="./img/1.PNG" alt="1">
+                        </a>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="catalog__card">
+                    <div class="img-holder">
+                        <a href="./img/2.jpeg" data-lightbox="image-1">
+                            <img id="zoom_02" src="./img/2.jpeg" data-zoom-image="./img/2.jpeg" alt="1">
+                        </a>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="catalog__card">
+                    <div class="img-holder">
+                        <a href="./img/3.jpg" data-lightbox="image-1">
+                            <img id="zoom_03" src="./img/3.jpg" data-zoom-image="./img/3.jpg" alt="1">
+                        </a>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="catalog__card">
+                    <div class="img-holder">
+                        <a href="./img/4.jpg" data-lightbox="image-1">
+                            <img id="zoom_04" src="./img/4.jpg" data-zoom-image="./img/4.jpg" alt="1">
+                        </a>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="catalog__card">
+                    <div class="img-holder">
+                        <a href="./img/5.jpg" data-lightbox="image-1">
+                            <img id="zoom_05" src="./img/5.jpg" data-zoom-image="./img/5.jpg" alt="1">
+                        </a>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="catalog__card">
+                    <div class="img-holder">
+                        <a href="./img/6.jpg" data-lightbox="image-1">
+                            <img id="zoom_06" src="./img/6.jpg" data-zoom-image="./img/6.jpg" alt="1">
+                        </a>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+          slidesPerView: 3,
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            loop: true,
+          },
+        });
+    </script>
+    <script src="./js/lightbox.js"></script>
+    <script>
+            
+        lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
+        })
+
+    </script>
+
+  
+    <script>
+        $('.grid').masonry({
+            itemSelector: '.grid-item',
+            columnWidth: 200,
+        });
+    </script>
+        
+    <script>
+
+
+   $('#zoom_01').elevateZoom({
+        zoomType: "window",
+        cursor: "crosshair",
+        zoomActivation:"hover",
+        zoomEnabled:true,
+        preloading: 1,
+        scrollZoom: true,
+        });
+
+    $('#zoom_02').elevateZoom({
+        zoomType: "window",
+        cursor: "crosshair",
+        zoomActivation:"hover",
+        zoomEnabled:true,
+        preloading: 1,
+        scrollZoom: true,
+    });
+
+    $('#zoom_03').elevateZoom({
+        zoomType: "window",
+        cursor: "crosshair",
+        zoomActivation:"hover",
+        zoomEnabled:true,
+        preloading: 1,
+        scrollZoom: true,  
+    });
+
+    $('#zoom_04').elevateZoom({
+        zoomType: "window",
+        cursor: "crosshair",
+        zoomActivation:"hover",
+        zoomEnabled:true,
+        preloading: 1,
+        scrollZoom: true,
+    });
+
+    $('#zoom_05').elevateZoom({
+        zoomType: "window",
+        cursor: "crosshair",
+        zoomActivation:"hover",
+        zoomEnabled:true,
+        preloading: 1,
+        scrollZoom: true,
+    });
+
+    $('#zoom_06').elevateZoom({
+        zoomType: "window",
+        cursor: "crosshair",
+        zoomActivation:"hover",
+        zoomEnabled:true,
+        preloading: 1,
+        scrollZoom: true,
+    });
+ 
+</script>
+
+  </body>
+  </html>

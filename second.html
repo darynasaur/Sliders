@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <title>slick</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="./styles/lightbox.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <div class="container">
+        <div class="catalog">
+            <div class="img-holder-1">
+                <a href="./img/1.png" data-lightbox="image-1">
+                    <img src="./img/1.png" alt="1">
+                </a>
+            </div>
+            <div class="img-holder-1">
+                <a href="./img/2.jpeg" data-lightbox="image-1">
+                    <img src="./img/2.jpeg" alt="1">
+                </a>
+            </div>
+            <div class="img-holder-1">
+                <a href="./img/3.jpg" data-lightbox="image-1">
+                    <img src="./img/3.jpg" alt="1">
+                </a>
+            </div>
+            <div class="img-holder-1">
+                <a href="./img/4.jpg" data-lightbox="image-1">
+                    <img src="./img/4.jpg" alt="1">
+                </a>
+            </div>
+            <div class="img-holder-1">
+                <a href="./img/5.jpg" data-lightbox="image-1">
+                    <img src="./img/5.jpg" alt="1">
+                </a>
+            </div>
+            <div class="img-holder-1">
+                <a href="./img/6.jpg" data-lightbox="image-1">
+                    <img src="./img/6.jpg" alt="1">
+                </a>
+            </div>
+        </div>
+    </div> 
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $('.catalog').slick({        
+            autoplay: false,
+            autoplaySpeed: 1000,
+            slidesToShow: 4,
+        });
+        });
+
+    </script>   
+        <script src="./js/lightbox.js"></script>
+        <script>
+                
+            lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true
+            })
+    
+        </script>
+  </body>
+  </html>

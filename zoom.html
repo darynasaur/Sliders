@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Zoom</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./js/zoom.js"></script>
+    <script src="./js/elevatezoom.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <div class="catalog__card">
+            <div class="img-holder">
+                <a href="./img/1.png">
+                    <img id="zoom_01" src="./img/1.png" data-zoom-image="./img/1.PNG" alt="1">
+                </a>
+            </div>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="catalog__card">
+            <div class="img-holder">
+                <a href="./img/2.jpeg">
+                    <img id="zoom_02" src="./img/2.jpeg" data-zoom-image="./img/2.jpeg" alt="1">
+                </a>
+            </div>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="catalog__card">
+            <div class="img-holder">
+                <a href="./img/3.jpg">
+                    <img id="zoom_03" src="./img/3.jpg" data-zoom-image="./img/3.jpg" alt="1">
+                </a>
+            </div>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="catalog__card">
+            <div class="img-holder">
+                <a href="./img/4.jpg">
+                    <img id="zoom_04" src="./img/4.jpg" data-zoom-image="./img/4.jpg" alt="1">
+                </a>
+            </div>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="catalog__card">
+            <div class="img-holder">
+                <a href="./img/5.jpg">
+                    <img id="zoom_05" src="./img/5.jpg" data-zoom-image="./img/5.jpg" alt="1">
+                </a>
+            </div>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="catalog__card">
+            <div class="img-holder">
+                <a href="./img/6.jpg">
+                    <img id="zoom_06" src="./img/6.jpg" data-zoom-image="./img/6.jpg" alt="1">
+                </a>
+            </div>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+        
+    <script>
+        $('#zoom_01').elevateZoom({
+        zoomType: "window",
+        cursor: "crosshair",
+        zoomActivation:"hover",
+        zoomEnabled:true,
+        preloading: 1,
+        scrollZoom: true,
+        });
+
+    $('#zoom_02').elevateZoom({
+        zoomType: "window",
+        cursor: "crosshair",
+        zoomActivation:"hover",
+        zoomEnabled:true,
+        preloading: 1,
+        scrollZoom: true,
+    });
+
+    $('#zoom_03').elevateZoom({
+        zoomType: "window",
+        cursor: "crosshair",
+        zoomActivation:"hover",
+        zoomEnabled:true,
+        preloading: 1,
+        scrollZoom: true,  
+    });
+
+    $('#zoom_04').elevateZoom({
+        zoomType: "window",
+        cursor: "crosshair",
+        zoomActivation:"hover",
+        zoomEnabled:true,
+        preloading: 1,
+        scrollZoom: true,
+    });
+
+    $('#zoom_05').elevateZoom({
+        zoomType: "window",
+        cursor: "crosshair",
+        zoomActivation:"hover",
+        zoomEnabled:true,
+        preloading: 1,
+        scrollZoom: true,
+    });
+
+    $('#zoom_06').elevateZoom({
+        zoomType: "window",
+        cursor: "crosshair",
+        zoomActivation:"hover",
+        zoomEnabled:true,
+        preloading: 1,
+        scrollZoom: true,
+    });
+ 
+    </script>
+
+  </body>
+  </html>
